@@ -8,6 +8,6 @@
 
 ```
  <?php
- include vendor/autoload.php;
- Fromat::parse($html);
+ include "vendor/autoload.php";
+ Format::parse($html);
 ```
