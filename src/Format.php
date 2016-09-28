@@ -23,11 +23,11 @@ class Format
             $allow_tags = self::$allow_tags;
 
         $content = preg_replace('/<(script|style)[^>]*>.*<\/\1>/Uis', '', $content);
-        $allowTags = array_unique(array_filter(array_map('trim', $allow_tags)));
+        $allow_tags = array_unique(array_filter(array_map('trim', $allow_tags)));
         if ($allow_tags) {
             $allow_tags = '<' . implode('><', $allow_tags) . '>';
         } else {
-            $allowTags = null;
+            $allow_tags = null;
         }
         return strip_tags($content, $allow_tags);
     }
