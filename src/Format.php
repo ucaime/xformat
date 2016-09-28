@@ -81,7 +81,7 @@ class Format
         return ($string == '') ? '' : '<p>'.$string.'</p>';
     }
 
-    public static function parse_content($content, $url=''){
+    public static function parse($content, $url=''){
         //先把所有全角空格去除
         $content = str_replace('　', '', $content);
         //2 去除不需要的标签
