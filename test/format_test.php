@@ -1,0 +1,11 @@
+<?php
+include "../src/Format.php";
+use \Ucaime\XFormat\Format;
+
+$html1 = <<<EOF
+<p>　<strong>　1、忌生冷、油腻食物</strong></p><p>　　由于产后胃肠蠕动较弱，故过于油腻的食物如肥肉、板油、花生仁等应尽量少食以免引起<a href=/zhishi/xiaohuabuliang/ target="_blank" style="border-bottom-width:1px;border-bottom-style:dashed;" title="消化不良">消化不良</a>。如夏季<a href=/zhishi/fenmian/ target="_blank" style="border-bottom-width:1px;border-bottom-style:dashed;" title="分娩">分娩</a>，产妇大多想吃些生冷食物，如冰淇淋、冰镇饮料和拌凉菜、凉饭等，这些生冷食物容易损伤脾胃，不利<a href=/zhishi/elu/ target="_blank" style="border-bottom-width:1px;border-bottom-style:dashed;" title="恶露">恶露</a>排出。</p><p>　<strong>　2、忌食辛辣等刺激性食物</strong></p><p>　　韭菜、大蒜、辣椒、胡椒等可影响产妇胃肠功能，引发产妇内热，口舌生疮，并可造成大<a href=/zhishi/bianmi/ target="_blank" style="border-bottom-width:1px;border-bottom-style:dashed;" title="便秘">便秘</a>结或痔疮发作。</p><p>　　<strong>3、忌食坚硬粗糙及酸性食物</strong></p><p>　　产妇身体虚弱，运动量小，如吃硬食或油炸食物，容易造成消化不良，还会损伤牙齿使产妇日后留下牙齿易于酸痛的遗患。</p><p>　<strong>　4、忌食过咸食物</strong></p><p>　　因咸食中含盐较多，可引起产妇体内水钠潴留，易造成水肿，并易诱发高血压病。但也不可忌盐，因产后尿多、汗多，排出盐分也增多，需要补充一定量的盐。</p><p>　<strong>　5、忌营养单一或过饱</strong></p><p>　　产妇不能挑食、<a href=/zhishi/pianshi/ target="_blank" style="border-bottom-width:1px;border-bottom-style:dashed;" title="偏食">偏食</a>，要做到食物多样化，粗细、荤素搭配，广而食之，合理营养。由于产妇胃肠功能较弱，过饱不仅会影响胃口，还会妨碍消化功能。因此，产妇要做到少食多餐，每日可由平时3餐增至5、6餐。</p><p>　<strong>　6、哺乳者禁食大麦及其制品</strong></p><p>　　大麦芽、麦乳精、麦芽糖等食物有回乳作用，故产后<a href=/zhishi/buruqi/ target="_blank" style="border-bottom-width:1px;border-bottom-style:dashed;" title="哺乳期">哺乳期</a>应忌食。</p><p>　<strong>　7、药物禁忌</strong></p><p>　　产后子宫出血较多，一般需要使用一些子宫收缩药物，但需哺乳产妇不宜使用麦角制剂，因麦角制剂抑制垂体泌乳素的分泌，从而产生<a href=/zhishi/huinai/ target="_blank" style="border-bottom-width:1px;border-bottom-style:dashed;" title="回奶">回奶</a>效应，同时它还有较强的升压作用，故高血压产妇应禁用。</p><p>　<strong>　8、产后不宜吸烟喝酒</strong></p><p>　　烟酒都是刺激性很强的东西，吸烟可使乳汁减少，烟中的尼古丁等多种有毒物质也会侵入乳汁中，婴儿吃了这样的乳汁，<a href=/zhishi/shengzhangfayu/ target="_blank" style="border-bottom-width:1px;border-bottom-style:dashed;" title="生长发育">生长发育</a>会受到影响。新妈妈饮酒时，酒精会进入乳汁，可引起婴儿沉睡、深呼吸、触觉迟钝、多汗等症状，有损婴儿健康。</p></div>
+	      
+	      
+EOF;
+
+echo Format::parse_content($html1);

@@ -1,0 +1,20 @@
+{
+  "name": "ucaime/xformat",
+  "description": "快速格式化采集的站点内容",
+  "keywords": ["spider", "format", "html", "tags"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Muyang Su",
+      "email": "somuyang@gmail.com",
+    }
+  ],
+  "require": {},
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "Ucaime\\XFormat\\": "src/"
+    }
+  }
+}
